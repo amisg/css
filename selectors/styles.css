@@ -1,0 +1,39 @@
+/* universal selector */
+* {
+	color: red;
+}
+
+/* element selector */
+p {
+	color: aqua;
+}
+
+/* id selector */
+#idselect {
+	background-color: brown;
+	color: #000;
+}
+
+/* class selector */
+
+.first {
+	border: 1px solid blueviolet;
+}
+
+/* descentent selector */
+.unordered li {
+	color: chartreuse;
+}
+
+/* child select // it will select all the element with child h1*/
+#box > h1 {
+	color: green;
+}
+
+/* grouped element selector */
+
+/* h1,
+h2,
+h3 {
+	color: red;
+} */
