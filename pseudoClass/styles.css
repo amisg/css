@@ -1,4 +1,4 @@
-a:link {
+/* a:link {
 	color: blueviolet;
 }
 
@@ -8,4 +8,37 @@ a:visited {
 
 a:hover {
 	color: aquamarine;
+} */
+
+/* it will select the first child of the h1 which will contain parent element 
+
+h1:first-child {
+	color: darkmagenta;
 }
+*/
+
+/* it selects the first p element in all the parent element ordering doesnt matter
+p:first-of-type {
+	color: rgb(147, 9, 9);
+} */
+
+/* it selects the prefered element from 1 - n child of the element
+tr:nth-child(1) {
+	color: red;
+}
+
+tr:nth-child(2) {
+	color: blue;
+}
+
+tr:nth-child(3) {
+	color: yellow;
+}
+
+tr:nth-child(4) {
+	color: orange;
+}
+
+tr:nth-child(5) {
+	color: springgreen;
+} */
