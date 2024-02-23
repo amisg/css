@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Attribue selector</title>
+		<style>
+			a[href] {
+				color: blueviolet;
+			}
+			a[target="_blank"] {
+				color: brown;
+			}
+			[target="_self"] {
+				color: chartreuse;
+			}
+			[id~="first"] {
+				color: red;
+				/* this will select the element of the target specific with attribute if its in first r in last*/
+			}
+			[id|="login"] {
+				background-color: yellow;
+				/*it will select the value specified in the attriute */
+			}
+			[class^="login"] {
+				background-color: blueviolet;
+				/* it select the first target value specified as an attribute*/
+			}
+			[class$="end"] {
+				background-color: orange;
+				/* it select the last target value specified as an attribute*/
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://google.com">google</a>
+		<a target="_blank">hello</a>
+		<a target="_self">home</a>
+
+		<input id="first" type="text" />
+		<br />
+		<input id="first para" />
+
+		<div id="login-box">login box</div>
+		<br />
+		<div id="login-sign-up">sign up</div>
+
+		<div class="login-start">login</div>
+		<div class="login-sign-up">signup</div>
+
+		<div class="login-end">login</div>
+		<div class="login-sign-end">lsignup</div>
+	</body>
+</html>
